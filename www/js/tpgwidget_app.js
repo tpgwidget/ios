@@ -109,7 +109,7 @@ if(navigator.onLine){
         $$(".right").remove();
         $$(".searchbar").remove();
         $$(".searchbar-overlay").remove();
-        $$(".graym").html("<h1>😕</h1><h2>Connection au serveur impossible</h2><small>TPGwidget n'a pas réussi à se connecter au serveur. Veuillez réessayer plus tard.</small>");
+        $$(".graym").html("<h1>😕</h1><h2>Connexion au serveur impossible</h2><small>TPGwidget n'a pas réussi à se connecter au serveur. Veuillez réessayer plus tard.</small>");
       }
     });
 
@@ -117,5 +117,5 @@ if(navigator.onLine){
     $$(".right").remove();
     $$(".searchbar").remove();
     $$(".searchbar-overlay").remove();
-    $$(".graym").html("<h1>😕</h1><h2>Pas de connection à internet</h2><small>TPGwidget a besoin d'une connection à internet pour fonctionner. Pour continuer, connectez vous à internet.</small>");
+    $$(".graym").html("<h1>😕</h1><h2>Pas de connexion à internet</h2><small>TPGwidget a besoin d'une connexion à internet pour fonctionner. Pour continuer, connectez-vous à internet.</small>");
 }

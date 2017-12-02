@@ -1,0 +1,17 @@
+{
+  "name": "ch.nicolapps.tpgwidget",
+  "version": "2.2.2",
+  "displayName": "TPGwidget",
+  "cordova": {
+    "platforms": [
+      "ios"
+    ],
+    "plugins": {
+      "cordova-plugin-whitelist": {}
+    }
+  },
+  "dependencies": {
+    "cordova-ios": "~4.2.1",
+    "cordova-plugin-whitelist": "1"
+  }
+}

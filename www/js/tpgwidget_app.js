@@ -82,7 +82,7 @@ if(navigator.onLine){
         });
 
         var template = '<li>'+
-         '<a href="http://tpg.nicolapps.ch/app/install.php?id={{stopName}}" class="item-link">'+
+         '<a href="https://tpg.nicolapps.ch/app/install.php?id={{stopName}}" class="item-link">'+
             '<div class="item-content">'+
                '<div class="item-inner">'+
                   '<div class="item-title">{{stopCode}}</div>'+

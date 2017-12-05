@@ -30,16 +30,6 @@
         <icon height="120" src="res/Icon-120.png" width="120" />
         <icon height="152" src="res/Icon-152.png" width="152" />
         <icon height="180" src="res/Icon-180.png" width="180" />
-        <splash height="480" src="res/splash-320-480.png" width="320" />
-        <splash height="960" src="res/splash-640-960.png" width="640" />
-        <splash height="1136" src="res/splash-640-1136.png" width="640" />
-        <splash height="1334" src="res/splash-750-1334.png" width="750" />
-        <splash height="1024" src="res/splash-768-1024.png" width="768" />
-        <splash height="768" src="res/splash-1024-768.png" width="1024" />
-        <splash height="2208" src="res/splash-1242-2208.png" width="1242" />
-        <splash height="2048" src="res/splash-1536-2048.png" width="1536" />
-        <splash height="1536" src="res/splash-2048-1536.png" width="2048" />
-        <splash height="1242" src="res/splash-2208-1242.png" width="2208" />
     </platform>
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="StatusBarBackgroundColor" value="#000000" />

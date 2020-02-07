@@ -157,7 +157,7 @@ span.logo > span {
     font-style: italic;
 }
 
-/* iPhone X status bar */
+/* iPhone X/XS/“11 Pro” status bar */
 @media only screen and (device-width : 375px) and (device-height : 812px) and (-webkit-device-pixel-ratio : 3) {
     .statusbar-overlay {
         height: 44px;
@@ -166,6 +166,62 @@ span.logo > span {
     html.with-statusbar-overlay body {
         padding-top:44px;
     }
+    
+    .welcomescreen-closebtn {
+        top: 20px;
+    }
+    
+    .swiper-container-horizontal > .swiper-pagination {
+        bottom: 32px;
+    }
+    
+    .welcomescreen-text {
+        bottom: 100px;
+    }
 }
 
-.l2, .l12, .l19, .l28, .l34, .l42, .l43, .l45, .l53, .l57, .l61, .l63, .lB, .lZ, .lY, .lT, .lO, .lK, .lG, .lF, .lM, .lDn, .lDN, .lD, .lNJ, .lNK,.lN, .lNM{color:#000;}.l1,.l14,.l22{background:#639}.l2{background:#cc3}.l3,.l18,.l23{background:#c39}.l4,.l9,.lR{background:#c03}.l5,.lNV{background:#09f}.l6{background:#09c}.l7{background:#093}.l8,.l15{background:#933}.l10,.lDA{background:#063}.l11{background:#939}.l12{background:#f90}.l19,.l28{background:#fc0}.l21{background:#633}.l25{background:#805a28}.l27{background:#009dbc}.l31,.l33,.l41,.l44,.l46,.l49,.l51,.l54,.l56{background:#099}.l32,.l35,.l36,.lXA{background:#666}.l34,.l42,.l43,.l45,.l53,.l57{background:#9cc}.l47,.lNP{background:#00b0a4}.l61,.l63,.lDN,.lN,.lM,.lO,.lT,.lB,.lD,.lF,.lG,.lK,.lY,.lZ{background:#ff9baa}.lA,.lC,.lE,.lJ,.lL,.lV{background:#f60}.lNA{background:#5a1e82}.lNC{background:#5e3285}.lND{background:#84471c}.lNE,.lNO{background:#b82f89}.lNJ{background:#d2db4a}.lNK,.lNM{background:#f5a300}.lNS{background:#008cbe}.lNT{background:#00ace7}.lP,.lS,.lW,.lX,.lU{background:#039}.lTO{background:#e2001d}.lTT{background:#fd0000}.l80,.l81,.l82,.l83,.l84,.l85,.l86,.l88,.lS1,.lSL,.l92,.l93,.l94,.l96,.l97{color:#000;border: 1px solid #000;}.l5plus,.lGplus,.lCplus,.lGplus,.lVplus.lPlus{background:#000}.l62{background:#ec69a3}
+/* iPhone XR/11 status bar */
+@media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 2) {
+    .statusbar-overlay {
+        height: 44px;
+    }
+
+    html.with-statusbar-overlay body {
+        padding-top:44px;
+    }
+    
+    .welcomescreen-closebtn {
+        top: 20px;
+    }
+    
+    .swiper-container-horizontal > .swiper-pagination {
+        bottom: 32px;
+    }
+    
+    .welcomescreen-text {
+        bottom: 100px;
+    }
+}
+
+/* iPhone “XS Max”/“11 Pro Max” status bar */
+@media only screen and (device-width : 414px) and (device-height : 896px) and (-webkit-device-pixel-ratio : 3) {
+    .statusbar-overlay {
+        height: 44px;
+    }
+
+    html.with-statusbar-overlay body {
+        padding-top:44px;
+    }
+    
+    .welcomescreen-closebtn {
+        top: 20px;
+    }
+    
+    .swiper-container-horizontal > .swiper-pagination {
+        bottom: 32px;
+    }
+    
+    .welcomescreen-text {
+        bottom: 100px;
+    }
+}

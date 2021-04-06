@@ -19,13 +19,8 @@ struct LineIcon: View {
             .cornerRadius(cornerRadius)
     }
     
-    var cornerRadius: CGFloat {
-        get { line.shape == .tpg ? 100 : 5 }
-    }
-    
-    var hasBorder: Bool {
-        get { line.background == .white && colorScheme == .light }
-    }
+    var cornerRadius: CGFloat { line.shape == .tpg ? 100 : 5 }
+    var hasBorder: Bool { line.background == .white && colorScheme == .light }
 }
 
 struct LineIcon_Previews: PreviewProvider {

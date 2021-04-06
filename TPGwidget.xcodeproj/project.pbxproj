@@ -15,6 +15,7 @@
 		1AFE7489261CBD47003B6EEA /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7488261CBD47003B6EEA /* Line.swift */; };
 		1AFE7493261CC46D003B6EEA /* LineIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7492261CC46D003B6EEA /* LineIcon.swift */; };
 		1AFE7496261CE9FC003B6EEA /* LinesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7495261CE9FC003B6EEA /* LinesGrid.swift */; };
+		1AFE7499261CFA1D003B6EEA /* StopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7498261CFA1D003B6EEA /* StopPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1AFE7488261CBD47003B6EEA /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		1AFE7492261CC46D003B6EEA /* LineIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineIcon.swift; sourceTree = "<group>"; };
 		1AFE7495261CE9FC003B6EEA /* LinesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesGrid.swift; sourceTree = "<group>"; };
+		1AFE7498261CFA1D003B6EEA /* StopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 			children = (
 				1AFE7492261CC46D003B6EEA /* LineIcon.swift */,
 				1AFE7495261CE9FC003B6EEA /* LinesGrid.swift */,
+				1AFE7498261CFA1D003B6EEA /* StopPage.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				1AFE7496261CE9FC003B6EEA /* LinesGrid.swift in Sources */,
 				1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */,
 				1AFE7482261CBC45003B6EEA /* Stop.swift in Sources */,
+				1AFE7499261CFA1D003B6EEA /* StopPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

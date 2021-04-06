@@ -13,7 +13,7 @@ struct Line: Decodable, Hashable {
 enum LineShape: String, Codable { case tpg, rectangular }
 
 /// The type of a line.
-enum LineType: String, Codable { case train, lex, tram, trolleybus, bus, noctambus, unknown }
+enum LineType: String, Codable { case train, lex, tram, trolleybus, bus, noctambus, aerobus, unknown }
 
 /// Defaults line shapes to rectangular.
 extension LineShape {

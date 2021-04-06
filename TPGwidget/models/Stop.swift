@@ -6,7 +6,7 @@ struct Stop: Decodable, Identifiable {
     let nameFormatted: String
     let nameRaw: String
     let lines: [Line]
-    let geolocation: Geolocation
+    let geolocation: Geolocation?
 
     struct Geolocation: Codable {
         let latitude: Double

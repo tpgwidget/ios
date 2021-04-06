@@ -1,21 +1,35 @@
 import SwiftUI
 
 /// A public transit line.
-struct Line: Decodable {
+struct Line: Decodable, Hashable {
     let name: String
     let background: Color
     let foreground: Color
-    let shape: Line.Shape
-    
-    enum Shape: String, Codable { case tpg, rectangular }
+    let shape: LineShape
+    let type: LineType
 }
 
-/// Defaults line shapes to rectangular if the line shape isn’t recognized.
-extension Line.Shape {
+/// The visual shape of a line.
+enum LineShape: String, Codable { case tpg, rectangular }
+
+/// The type of a line.
+enum LineType: String, Codable { case train, lex, tram, trolleybus, bus, noctambus, unknown }
+
+/// Defaults line shapes to rectangular.
+extension LineShape {
     public init(from decoder: Decoder) throws {
-        self = try Line.Shape(
+        self = try LineShape(
             rawValue: decoder.singleValueContainer().decode(RawValue.self)
         ) ?? .rectangular
+    }
+}
+
+/// Defaults type to unknown.
+extension LineType {
+    public init(from decoder: Decoder) throws {
+        self = try LineType(
+            rawValue: decoder.singleValueContainer().decode(RawValue.self)
+        ) ?? .unknown
     }
 }
 
@@ -29,7 +43,7 @@ extension Color: Decodable {
     }
     
     /// Init a color from a hex value.
-    private init(hex: String) { // https://stackoverflow.com/a/56874327/4652564
+    public init(hex: String) { // https://stackoverflow.com/a/56874327/4652564
         let hex = hex.trimmingCharacters(in: CharacterSet.alphanumerics.inverted)
         
         var int: UInt64 = 0

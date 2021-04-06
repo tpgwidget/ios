@@ -13,6 +13,7 @@
 		1A54F74D261CB10500BDB659 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F74C261CB10500BDB659 /* Preview Assets.xcassets */; };
 		1AFE7482261CBC45003B6EEA /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7481261CBC45003B6EEA /* Stop.swift */; };
 		1AFE7489261CBD47003B6EEA /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7488261CBD47003B6EEA /* Line.swift */; };
+		1AFE7493261CC46D003B6EEA /* LineIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7492261CC46D003B6EEA /* LineIcon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1A54F74E261CB10500BDB659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AFE7481261CBC45003B6EEA /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
 		1AFE7488261CBD47003B6EEA /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		1AFE7492261CC46D003B6EEA /* LineIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineIcon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		1A54F744261CB10400BDB659 /* TPGwidget */ = {
 			isa = PBXGroup;
 			children = (
+				1AFE748C261CC43F003B6EEA /* views */,
 				1AFE748B261CC3FB003B6EEA /* models */,
 				1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */,
 				1A54F747261CB10400BDB659 /* ContentView.swift */,
@@ -81,6 +84,14 @@
 				1AFE7488261CBD47003B6EEA /* Line.swift */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		1AFE748C261CC43F003B6EEA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE7492261CC46D003B6EEA /* LineIcon.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			files = (
 				1A54F748261CB10400BDB659 /* ContentView.swift in Sources */,
 				1AFE7489261CBD47003B6EEA /* Line.swift in Sources */,
+				1AFE7493261CC46D003B6EEA /* LineIcon.swift in Sources */,
 				1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */,
 				1AFE7482261CBC45003B6EEA /* Stop.swift in Sources */,
 			);

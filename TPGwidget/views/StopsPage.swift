@@ -14,7 +14,7 @@ struct StopsPage: View {
                 List {
                     ForEach(stops!.all) { stop in
                         NavigationLink(destination: StopPage(stop: stop), label: {
-                            Text(stop.nameRaw)
+                            MultiLevelText(source: stop.nameFormatted)
                         })
                     }
                 }
@@ -76,7 +76,8 @@ struct StopsPage_Previews: PreviewProvider {
         StopsPage(stops: StopsAPIResult(all: [
             Stop(id: "BAIR", nameFormatted: "Bel-Air", nameRaw: "Bel-Air", lines: [], geolocation: nil),
             Stop(id: "CVIN", nameFormatted: "Gare Cornavin", nameRaw: "Gare Cornavin", lines: [], geolocation: nil),
-            Stop(id: "RIVE", nameFormatted: "Rive", nameRaw: "Rive", lines: [], geolocation: nil)
+            Stop(id: "RIVE", nameFormatted: "Rive", nameRaw: "Rive", lines: [], geolocation: nil),
+            Stop(id: "SVON", nameFormatted: "Savonnière <small>(Hôpital de Bellerive)</small>", nameRaw: "Savonnière", lines: [], geolocation: nil),
         ]))
     }
 }

@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A1E837C261D17B10084DB35 /* StopsAPIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E837B261D17B10084DB35 /* StopsAPIResult.swift */; };
+		1A1E8381261D18CA0084DB35 /* StopsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E8380261D18CA0084DB35 /* StopsPage.swift */; };
+		1A1E8385261DB5D50084DB35 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E8384261DB5D50084DB35 /* TutorialPage.swift */; };
 		1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */; };
-		1A54F748261CB10400BDB659 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F747261CB10400BDB659 /* ContentView.swift */; };
 		1A54F74A261CB10500BDB659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F749261CB10500BDB659 /* Assets.xcassets */; };
 		1A54F74D261CB10500BDB659 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F74C261CB10500BDB659 /* Preview Assets.xcassets */; };
 		1AFE7482261CBC45003B6EEA /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7481261CBC45003B6EEA /* Stop.swift */; };
@@ -19,9 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A1E837B261D17B10084DB35 /* StopsAPIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsAPIResult.swift; sourceTree = "<group>"; };
+		1A1E8380261D18CA0084DB35 /* StopsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsPage.swift; sourceTree = "<group>"; };
+		1A1E8384261DB5D50084DB35 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
 		1A54F742261CB10400BDB659 /* TPGwidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPGwidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPGwidgetApp.swift; sourceTree = "<group>"; };
-		1A54F747261CB10400BDB659 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1A54F749261CB10500BDB659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A54F74C261CB10500BDB659 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1A54F74E261CB10500BDB659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,7 +69,6 @@
 				1AFE748C261CC43F003B6EEA /* views */,
 				1AFE748B261CC3FB003B6EEA /* models */,
 				1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */,
-				1A54F747261CB10400BDB659 /* ContentView.swift */,
 				1A54F749261CB10500BDB659 /* Assets.xcassets */,
 				1A54F74E261CB10500BDB659 /* Info.plist */,
 				1A54F74B261CB10500BDB659 /* Preview Content */,
@@ -86,6 +89,7 @@
 			children = (
 				1AFE7481261CBC45003B6EEA /* Stop.swift */,
 				1AFE7488261CBD47003B6EEA /* Line.swift */,
+				1A1E837B261D17B10084DB35 /* StopsAPIResult.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -96,6 +100,8 @@
 				1AFE7492261CC46D003B6EEA /* LineIcon.swift */,
 				1AFE7495261CE9FC003B6EEA /* LinesGrid.swift */,
 				1AFE7498261CFA1D003B6EEA /* StopPage.swift */,
+				1A1E8380261D18CA0084DB35 /* StopsPage.swift */,
+				1A1E8384261DB5D50084DB35 /* TutorialPage.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -169,9 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A54F748261CB10400BDB659 /* ContentView.swift in Sources */,
 				1AFE7489261CBD47003B6EEA /* Line.swift in Sources */,
+				1A1E8385261DB5D50084DB35 /* TutorialPage.swift in Sources */,
+				1A1E837C261D17B10084DB35 /* StopsAPIResult.swift in Sources */,
 				1AFE7493261CC46D003B6EEA /* LineIcon.swift in Sources */,
+				1A1E8381261D18CA0084DB35 /* StopsPage.swift in Sources */,
 				1AFE7496261CE9FC003B6EEA /* LinesGrid.swift in Sources */,
 				1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */,
 				1AFE7482261CBC45003B6EEA /* Stop.swift in Sources */,

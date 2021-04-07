@@ -2,8 +2,13 @@
   "colors" : [
     {
       "color" : {
-        "platform" : "ios",
-        "reference" : "systemOrangeColor"
+        "color-space" : "extended-srgb",
+        "components" : {
+          "alpha" : "1.000",
+          "blue" : "-0.132",
+          "green" : "0.399",
+          "red" : "1.010"
+        }
       },
       "idiom" : "universal"
     }

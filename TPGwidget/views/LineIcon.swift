@@ -8,7 +8,7 @@ struct LineIcon: View {
     
     var body: some View {
         Text(line.name)
-            .foregroundColor(line.foreground)
+            .foregroundColor(line.text)
             .font(Font.custom("Helvetica Neue Bold", size: 20))
             .frame(width: 49, height: 34, alignment: .center)
             .background(line.background)
@@ -25,10 +25,10 @@ struct LineIcon: View {
 
 struct LineIcon_Previews: PreviewProvider {
     static let lines = [
-        Line(name: "6", background: Color(hex: "#0099CC"), foreground: Color.white, shape: .tpg, type: .bus),
-        Line(name: "19", background: Color(hex: "#ffcc01"), foreground: Color.black, shape: .tpg, type: .bus),
-        Line(name: "R", background: Color.white, foreground: Color.black, shape: .tpg, type: .bus),
-        Line(name: "L4", background: Color(hex: "#E08932"), foreground: Color.white, shape: .rectangular, type: .lex)
+        Line(name: "6", background: Color(hex: "#0099CC"), text: Color.white, shape: .tpg, type: .bus),
+        Line(name: "19", background: Color(hex: "#ffcc01"), text: Color.black, shape: .tpg, type: .bus),
+        Line(name: "R", background: Color.white, text: Color.black, shape: .tpg, type: .bus),
+        Line(name: "L4", background: Color(hex: "#E08932"), text: Color.white, shape: .rectangular, type: .lex)
     ]
     
     static var previews: some View {

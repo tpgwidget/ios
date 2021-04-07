@@ -4,7 +4,7 @@ import SwiftUI
 struct TPGwidgetApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            StopsPage()
         }
     }
 }

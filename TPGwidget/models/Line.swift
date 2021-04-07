@@ -4,7 +4,7 @@ import SwiftUI
 struct Line: Decodable, Hashable {
     let name: String
     let background: Color
-    let foreground: Color
+    let text: Color
     let shape: LineShape
     let type: LineType
 }

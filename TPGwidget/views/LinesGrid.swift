@@ -19,9 +19,9 @@ struct LinesGrid: View {
 
 struct LinesGrid_Previews: PreviewProvider {
     static var lines = [
-        Line(name: "14", background: Color(hex: "#663399"), foreground: Color.white, shape: .tpg, type: .tram),
-        Line(name: "18", background: Color(hex: "#cc3399"), foreground: Color.white, shape: .tpg, type: .tram),
-        Line(name: "57", background: Color(hex: "#80c3b5"), foreground: Color.black, shape: .tpg, type: .bus),
+        Line(name: "14", background: Color(hex: "#663399"), text: Color.white, shape: .tpg, type: .tram),
+        Line(name: "18", background: Color(hex: "#cc3399"), text: Color.white, shape: .tpg, type: .tram),
+        Line(name: "57", background: Color(hex: "#80c3b5"), text: Color.black, shape: .tpg, type: .bus),
     ]
     
     static var previews: some View {

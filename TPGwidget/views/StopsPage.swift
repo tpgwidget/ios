@@ -2,14 +2,9 @@ import SwiftUI
 
 /// Main page of the app.
 struct StopsPage: View {
-    @State
-    var stops: StopsAPIResult? = nil
-    
-    @State
-    var showErrorMessage = false
-    
-    @State
-    var showTutorial = false
+    @State var stops: StopsAPIResult? = nil
+    @State var showErrorMessage = false
+    @State var showTutorial = false
     
     var body: some View {
         NavigationView {
@@ -48,7 +43,11 @@ struct StopsPage: View {
         
         // Tutorial
         .sheet(isPresented: $showTutorial, content: {
-            TutorialPage()
+            NavigationView {
+                TutorialPage()
+            }
+            .navigationViewStyle(StackNavigationViewStyle())
+            .accentColor(.white)
         })
     }
     

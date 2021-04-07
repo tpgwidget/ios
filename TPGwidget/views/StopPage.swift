@@ -13,7 +13,8 @@ struct StopPage: View {
                 Button(action: install, label: {
                     Text("Installer")
                 })
-                .buttonStyle(RoundedButtonStyle())
+                .buttonStyle(RoundedButtonStyle(variant: .normal))
+                .padding()
             }
         }
         .navigationTitle(Text(stop.nameRaw))
@@ -22,25 +23,6 @@ struct StopPage: View {
     func install() {
         let url = URL(string: "https://tpg.nicolapps.ch/\(stop.id)/")!
         UIApplication.shared.open(url)
-    }
-}
-
-struct RoundedButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 15)
-            .padding(.horizontal, 25)
-            .background(Color("AccentColor"))
-            .overlay(Color.black.opacity(configuration.isPressed ? 0.1 : 0))
-            
-            .foregroundColor(.white)
-            .font(.system(size: 20, weight: .semibold))
-            .hoverEffect(.lift)
-            
-            .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
-            .animation(.easeInOut(duration: 0.2))
-            .padding()
     }
 }
 

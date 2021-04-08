@@ -48,5 +48,6 @@ struct StopPage_Previews: PreviewProvider {
         NavigationView {
             StopPage(stop: stop)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }

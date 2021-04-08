@@ -3,8 +3,11 @@ import SwiftUI
 /// Main page of the app.
 struct StopsPage: View {
     @State var stops: StopsAPIResult? = nil
+    
     @State var showErrorMessage = false
     @State var showTutorial = false
+    
+    @State var searchQuery = ""
     
     var body: some View {
         NavigationView {
@@ -12,12 +15,29 @@ struct StopsPage: View {
                 ProgressView()
             } else {
                 List {
-                    ForEach(stops!.all) { stop in
-                        NavigationLink(destination: StopPage(stop: stop), label: {
-                            MultiLevelText(source: stop.nameFormatted)
-                        })
+                    Section {
+                        SearchBar(value: $searchQuery, placeholder: "Rechercher un arrêt")
+                            .listRowInsets(EdgeInsets())
+                            .padding(.vertical, 8)
+                            .padding(.horizontal)
+                            .buttonStyle(PlainButtonStyle()) // fixes the behavior of buttons, https://stackoverflow.com/a/58368388/4652564
+                    }
+                    
+                    Section {
+                        let stops = filteredStops
+                        
+                        ForEach(stops) { stop in
+                            NavigationLink(destination: StopPage(stop: stop), label: {
+                                MultiLevelText(source: stop.nameFormatted)
+                            })
+                        }
+                        
+                        if stops.isEmpty {
+                            Text("Aucun arrêt trouvé.").italic()
+                        }
                     }
                 }
+                
                 .navigationTitle("Nouveau raccourci")
                 .toolbar {
                     ToolbarItemGroup(placement: .navigationBarTrailing) {
@@ -52,6 +72,15 @@ struct StopsPage: View {
     }
     
     var isLoading: Bool { stops == nil }
+    
+    var filteredStops: [Stop] {
+        let query = Stop.normalizeForSearch(searchQuery)
+        if query.isEmpty {
+            return stops!.all
+        }
+        
+        return stops!.all.filter { $0.nameMatches(query) }
+    }
     
     /// Loads the view’s contents from the API.
     func load() {

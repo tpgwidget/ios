@@ -10,6 +10,8 @@
 		1A1E837C261D17B10084DB35 /* StopsAPIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E837B261D17B10084DB35 /* StopsAPIResult.swift */; };
 		1A1E8381261D18CA0084DB35 /* StopsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E8380261D18CA0084DB35 /* StopsPage.swift */; };
 		1A1E8385261DB5D50084DB35 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E8384261DB5D50084DB35 /* TutorialPage.swift */; };
+		1A45EBD02621FF7E003C3D7D /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A45EBCF2621FF7E003C3D7D /* Stickers.xcassets */; };
+		1A45EBD42621FF7E003C3D7D /* TPGwidget Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */; };
 		1A54F74A261CB10500BDB659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F749261CB10500BDB659 /* Assets.xcassets */; };
 		1A54F74D261CB10500BDB659 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F74C261CB10500BDB659 /* Preview Assets.xcassets */; };
@@ -23,10 +25,37 @@
 		1AFE7499261CFA1D003B6EEA /* StopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7498261CFA1D003B6EEA /* StopPage.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1A45EBD22621FF7E003C3D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A54F73A261CB10400BDB659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A45EBCC2621FF7C003C3D7D;
+			remoteInfo = "TPGwidget Stickers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A45EBD52621FF7E003C3D7D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A45EBD42621FF7E003C3D7D /* TPGwidget Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1A1E837B261D17B10084DB35 /* StopsAPIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsAPIResult.swift; sourceTree = "<group>"; };
 		1A1E8380261D18CA0084DB35 /* StopsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsPage.swift; sourceTree = "<group>"; };
 		1A1E8384261DB5D50084DB35 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
+		1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TPGwidget Stickers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A45EBCF2621FF7E003C3D7D /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		1A45EBD12621FF7E003C3D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A54F742261CB10400BDB659 /* TPGwidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPGwidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPGwidgetApp.swift; sourceTree = "<group>"; };
 		1A54F749261CB10500BDB659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,10 +82,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A45EBCE2621FF7C003C3D7D /* TPGwidget Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				1A45EBCF2621FF7E003C3D7D /* Stickers.xcassets */,
+				1A45EBD12621FF7E003C3D7D /* Info.plist */,
+			);
+			path = "TPGwidget Stickers";
+			sourceTree = "<group>";
+		};
 		1A54F739261CB10400BDB659 = {
 			isa = PBXGroup;
 			children = (
 				1A54F744261CB10400BDB659 /* TPGwidget */,
+				1A45EBCE2621FF7C003C3D7D /* TPGwidget Stickers */,
 				1A54F743261CB10400BDB659 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1A54F742261CB10400BDB659 /* TPGwidget.app */,
+				1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +158,21 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1A45EBCC2621FF7C003C3D7D /* TPGwidget Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A45EBD82621FF7E003C3D7D /* Build configuration list for PBXNativeTarget "TPGwidget Stickers" */;
+			buildPhases = (
+				1A45EBCB2621FF7C003C3D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TPGwidget Stickers";
+			productName = "TPGwidget Stickers";
+			productReference = 1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
 		1A54F741261CB10400BDB659 /* TPGwidget */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A54F751261CB10500BDB659 /* Build configuration list for PBXNativeTarget "TPGwidget" */;
@@ -125,10 +180,12 @@
 				1A54F73E261CB10400BDB659 /* Sources */,
 				1A54F73F261CB10400BDB659 /* Frameworks */,
 				1A54F740261CB10400BDB659 /* Resources */,
+				1A45EBD52621FF7E003C3D7D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1A45EBD32621FF7E003C3D7D /* PBXTargetDependency */,
 			);
 			name = TPGwidget;
 			productName = TPGwidget;
@@ -144,6 +201,9 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
+					1A45EBCC2621FF7C003C3D7D = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					1A54F741261CB10400BDB659 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -163,11 +223,20 @@
 			projectRoot = "";
 			targets = (
 				1A54F741261CB10400BDB659 /* TPGwidget */,
+				1A45EBCC2621FF7C003C3D7D /* TPGwidget Stickers */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1A45EBCB2621FF7C003C3D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A45EBD02621FF7E003C3D7D /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1A54F740261CB10400BDB659 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -201,7 +270,49 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1A45EBD32621FF7E003C3D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A45EBCC2621FF7C003C3D7D /* TPGwidget Stickers */;
+			targetProxy = 1A45EBD22621FF7E003C3D7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		1A45EBD62621FF7E003C3D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3.0.0.0;
+				DEVELOPMENT_TEAM = W47E2LS5Y9;
+				INFOPLIST_FILE = "TPGwidget Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 3.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.nicolapps.TPGwidget.TPGwidget-Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A45EBD72621FF7E003C3D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3.0.0.0;
+				DEVELOPMENT_TEAM = W47E2LS5Y9;
+				INFOPLIST_FILE = "TPGwidget Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 3.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ch.nicolapps.TPGwidget.TPGwidget-Stickers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		1A54F74F261CB10500BDB659 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -369,6 +480,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1A45EBD82621FF7E003C3D7D /* Build configuration list for PBXNativeTarget "TPGwidget Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A45EBD62621FF7E003C3D7D /* Debug */,
+				1A45EBD72621FF7E003C3D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1A54F73D261CB10400BDB659 /* Build configuration list for PBXProject "TPGwidget" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

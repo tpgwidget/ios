@@ -60,7 +60,12 @@ struct SearchBar: View {
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(value: .constant(""), placeholder: "Recherche").previewLayout(.sizeThatFits)
-        SearchBar(value: .constant("Hello world"), isActive: true, placeholder: "Rechercher").previewLayout(.sizeThatFits)
+        SearchBar(value: .constant(""), placeholder: "Recherche")
+            .previewDisplayName("Default")
+            .previewLayout(.sizeThatFits)
+        
+        SearchBar(value: .constant("Hello world"), isActive: true, placeholder: "Rechercher")
+            .previewDisplayName("Active")
+            .previewLayout(.sizeThatFits)
     }
 }

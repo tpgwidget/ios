@@ -15,7 +15,7 @@ struct TutorialPage: View {
     var body: some View {
         GeometryReader { geo in
             ZStack {
-                Color("AccentColor")
+                LinearGradient(gradient: Gradient(colors: [Color("GradientTop"), Color("GradientBottom")]), startPoint: .top, endPoint: .bottom)
                 
                 TabView(selection: $selection) {
                     ForEach(slides.indices) { slideIndex in

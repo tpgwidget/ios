@@ -63,11 +63,7 @@ struct StopsPage: View {
         
         // Tutorial
         .sheet(isPresented: $showTutorial, content: {
-            NavigationView {
-                TutorialPage()
-            }
-            .navigationViewStyle(StackNavigationViewStyle())
-            .accentColor(.white)
+            TutorialPage()
         })
     }
     

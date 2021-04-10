@@ -6,52 +6,59 @@ struct TutorialPage: View {
     @State var selection = 0
     
     let slides = [
-        "Bienvenue ! Ce court tutoriel vous expliquera comment fonctionne TPGwidget.",
-        "TPGwidget permet de créer sur votre écran d'accueil un raccourci pour votre arrêt de bus ou de tram.",
-        "Vous pouvez utiliser n’importe quel arrêt : domicile, travail, école… Et vous pouvez créer autant de raccourcis que vous voulez !",
+        "Bienvenue ! TPGwidget permet de créer des raccourcis sur l’écran d’accueil pour vos arrêts de bus ou de tram.",
+        "Vous pouvez créer autant de raccourcis que vous voulez : domicile, travail, école…",
         "C’est parti ! Vous pouvez maintenant choisir un arrêt que vous voulez utiliser.",
     ]
     
     var body: some View {
         GeometryReader { geo in
-            ZStack {
+            ZStack(alignment: .topTrailing) {
                 LinearGradient(gradient: Gradient(colors: [Color("GradientTop"), Color("GradientBottom")]), startPoint: .top, endPoint: .bottom)
                 
                 TabView(selection: $selection) {
                     ForEach(slides.indices) { slideIndex in
-                        VStack(alignment: .leading, spacing: 20) {                            
-                            Spacer()
+                        VStack {
+                            Group {
+                                Image("welcome\(slideIndex)")
+                                    .resizable()
+                                    .scaledToFit()
+                            }
+                            .frame(maxHeight: 350)
                             
-                            Text(slides[slideIndex])
-                                .font(.system(size: 24, weight: .semibold, design: .default))
+                            VStack(alignment: .leading) {
+                                Text(slides[slideIndex])
+                                    .font(.system(size: 24, weight: .semibold, design: .default))
+                                    .padding(.vertical, 8)
+                                    .frame(minHeight: 140)
 
-                            if slideIndex == slides.count - 1 {
-                                Button("Commencer", action: close)
-                                .buttonStyle(RoundedButtonStyle(variant: .inversed))
-                            } else {
-                                Button("Suivant", action: nextSlide)
-                                .buttonStyle(RoundedButtonStyle(variant: .inversed))
+                                if slideIndex == slides.count - 1 {
+                                    Button("Commencer", action: close)
+                                    .buttonStyle(RoundedButtonStyle(variant: .inversed))
+                                } else {
+                                    Button("Suivant", action: nextSlide)
+                                    .buttonStyle(RoundedButtonStyle(variant: .inversed))
+                                }
                             }
                         }
                         .foregroundColor(.white)
                         .padding()
-                        .padding(.bottom, 40)
+                        .padding(.vertical, 36)
                         .tag(slideIndex)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 .padding(geo.safeAreaInsets)
-            }
-            .ignoresSafeArea()
-        }
-        
-        .toolbar {
-            ToolbarItemGroup(placement: .navigationBarTrailing) {
+                .padding(.top, 50)
+                
                 Button(action: close, label: {
                     Image(systemName: "xmark.circle")
                 })
+                .accentColor(.white)
                 .accessibility(label: Text("Passer le tutoriel"))
+                .padding()
             }
+            .ignoresSafeArea()
         }
     }
 
@@ -70,11 +77,8 @@ struct TutorialPage: View {
 
 struct TutorialPage_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            TutorialPage()
+        ForEach([0, 1, 2], id: \.self) { page in
+            TutorialPage(selection: page)
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-        .accentColor(.white)
-        .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
     }
 }

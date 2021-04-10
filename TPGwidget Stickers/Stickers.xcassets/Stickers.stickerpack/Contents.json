@@ -1,0 +1,287 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "grid-size" : "small"
+  },
+  "stickers" : [
+    {
+      "filename" : "TPGwidget.sticker"
+    },
+    {
+      "filename" : "Tramway Stadler Tango.sticker"
+    },
+    {
+      "filename" : "Tramway Bombardier Cityrunner.sticker"
+    },
+    {
+      "filename" : "Tramway DAV.sticker"
+    },
+    {
+      "filename" : "Trolleybus VanHool ExquiCity.sticker"
+    },
+    {
+      "filename" : "Trolleybus Hess Swisstrolley.sticker"
+    },
+    {
+      "filename" : "Trolleybus NAW.sticker"
+    },
+    {
+      "filename" : "Autobus TOSA.sticker"
+    },
+    {
+      "filename" : "Autobus Mercedes-Benz Citaro.sticker"
+    },
+    {
+      "filename" : "Autobus Mercedes-Benz Citaro C2.sticker"
+    },
+    {
+      "filename" : "Autobus MAN Lion's City.sticker"
+    },
+    {
+      "filename" : "Navette autonome Navya Arma.sticker"
+    },
+    {
+      "filename" : "Ligne 12.sticker"
+    },
+    {
+      "filename" : "Ligne 14.sticker"
+    },
+    {
+      "filename" : "Ligne 15.sticker"
+    },
+    {
+      "filename" : "Ligne 17.sticker"
+    },
+    {
+      "filename" : "Ligne 18.sticker"
+    },
+    {
+      "filename" : "Ligne 1.sticker"
+    },
+    {
+      "filename" : "Ligne 2.sticker"
+    },
+    {
+      "filename" : "Ligne 3.sticker"
+    },
+    {
+      "filename" : "Ligne 5.sticker"
+    },
+    {
+      "filename" : "Ligne 5+.sticker"
+    },
+    {
+      "filename" : "Ligne 6.sticker"
+    },
+    {
+      "filename" : "Ligne 7.sticker"
+    },
+    {
+      "filename" : "Ligne 8.sticker"
+    },
+    {
+      "filename" : "Ligne 9.sticker"
+    },
+    {
+      "filename" : "Ligne 10.sticker"
+    },
+    {
+      "filename" : "Ligne 11.sticker"
+    },
+    {
+      "filename" : "Ligne 19.sticker"
+    },
+    {
+      "filename" : "Ligne 20.sticker"
+    },
+    {
+      "filename" : "Ligne 21.sticker"
+    },
+    {
+      "filename" : "Ligne 22.sticker"
+    },
+    {
+      "filename" : "Ligne 23.sticker"
+    },
+    {
+      "filename" : "Ligne 25.sticker"
+    },
+    {
+      "filename" : "Ligne 28.sticker"
+    },
+    {
+      "filename" : "Ligne 31.sticker"
+    },
+    {
+      "filename" : "Ligne 32.sticker"
+    },
+    {
+      "filename" : "Ligne 33.sticker"
+    },
+    {
+      "filename" : "Ligne 34.sticker"
+    },
+    {
+      "filename" : "Ligne 35.sticker"
+    },
+    {
+      "filename" : "Ligne 36.sticker"
+    },
+    {
+      "filename" : "Ligne 37.sticker"
+    },
+    {
+      "filename" : "Ligne 38.sticker"
+    },
+    {
+      "filename" : "Ligne 39.sticker"
+    },
+    {
+      "filename" : "Ligne 41.sticker"
+    },
+    {
+      "filename" : "Ligne 42.sticker"
+    },
+    {
+      "filename" : "Ligne 43.sticker"
+    },
+    {
+      "filename" : "Ligne 44.sticker"
+    },
+    {
+      "filename" : "Ligne 45.sticker"
+    },
+    {
+      "filename" : "Ligne 46.sticker"
+    },
+    {
+      "filename" : "Ligne 47.sticker"
+    },
+    {
+      "filename" : "Ligne 50.sticker"
+    },
+    {
+      "filename" : "Ligne 51.sticker"
+    },
+    {
+      "filename" : "Ligne 52.sticker"
+    },
+    {
+      "filename" : "Ligne 53.sticker"
+    },
+    {
+      "filename" : "Ligne 55.sticker"
+    },
+    {
+      "filename" : "Ligne 56.sticker"
+    },
+    {
+      "filename" : "Ligne 57.sticker"
+    },
+    {
+      "filename" : "Ligne 59.sticker"
+    },
+    {
+      "filename" : "Ligne 62.sticker"
+    },
+    {
+      "filename" : "Ligne 63.sticker"
+    },
+    {
+      "filename" : "Ligne 70.sticker"
+    },
+    {
+      "filename" : "Ligne 71.sticker"
+    },
+    {
+      "filename" : "Ligne 72.sticker"
+    },
+    {
+      "filename" : "Ligne 73.sticker"
+    },
+    {
+      "filename" : "Ligne 74.sticker"
+    },
+    {
+      "filename" : "Ligne 75.sticker"
+    },
+    {
+      "filename" : "Ligne 76.sticker"
+    },
+    {
+      "filename" : "Ligne 77.sticker"
+    },
+    {
+      "filename" : "Ligne 78.sticker"
+    },
+    {
+      "filename" : "Ligne 64.sticker"
+    },
+    {
+      "filename" : "Ligne 66.sticker"
+    },
+    {
+      "filename" : "Ligne 68.sticker"
+    },
+    {
+      "filename" : "Ligne A.sticker"
+    },
+    {
+      "filename" : "Ligne D.sticker"
+    },
+    {
+      "filename" : "Ligne E.sticker"
+    },
+    {
+      "filename" : "Ligne E+.sticker"
+    },
+    {
+      "filename" : "Ligne F.sticker"
+    },
+    {
+      "filename" : "Ligne G.sticker"
+    },
+    {
+      "filename" : "Ligne G+.sticker"
+    },
+    {
+      "filename" : "Ligne J.sticker"
+    },
+    {
+      "filename" : "Ligne K.sticker"
+    },
+    {
+      "filename" : "Ligne L.sticker"
+    },
+    {
+      "filename" : "Ligne M.sticker"
+    },
+    {
+      "filename" : "Ligne N.sticker"
+    },
+    {
+      "filename" : "Ligne T.sticker"
+    },
+    {
+      "filename" : "Ligne A1.sticker"
+    },
+    {
+      "filename" : "Ligne A2.sticker"
+    },
+    {
+      "filename" : "Ligne A3.sticker"
+    },
+    {
+      "filename" : "Ligne A4.sticker"
+    },
+    {
+      "filename" : "Ligne A5.sticker"
+    },
+    {
+      "filename" : "Ligne A6.sticker"
+    }
+  ]
+}

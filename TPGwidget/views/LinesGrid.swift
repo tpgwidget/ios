@@ -9,7 +9,7 @@ struct LinesGrid: View {
     ]
     
     var body: some View {
-        LazyVGrid(columns: layout, spacing: 10) {
+        LazyVGrid(columns: layout, alignment: .leading, spacing: 10) {
             ForEach(lines, id: \.self) { line in
                 LineIcon(line: line)
             }

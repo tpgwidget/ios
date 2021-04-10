@@ -5,7 +5,7 @@ struct StopPage: View {
     
     var body: some View {
         VStack {
-            LinesGrid(lines: stop.lines).padding(.vertical)
+            LinesGrid(lines: stop.lines).padding()
             
             Spacer()
             

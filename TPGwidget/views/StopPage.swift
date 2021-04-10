@@ -16,6 +16,8 @@ struct StopPage: View {
                 .buttonStyle(RoundedButtonStyle(variant: .normal))
                 .padding()
             }
+            
+            Spacer().frame(maxHeight: 96)
         }
         .navigationTitle(Text(stop.nameRaw))
     }

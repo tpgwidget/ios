@@ -102,7 +102,7 @@ struct StopsPage_Previews: PreviewProvider {
             Stop(id: "BAIR", nameFormatted: "Bel-Air", nameRaw: "Bel-Air", lines: [], geolocation: nil),
             Stop(id: "CVIN", nameFormatted: "Gare Cornavin", nameRaw: "Gare Cornavin", lines: [], geolocation: nil),
             Stop(id: "RIVE", nameFormatted: "Rive", nameRaw: "Rive", lines: [], geolocation: nil),
-            Stop(id: "SVON", nameFormatted: "Savonnière <small>(Hôpital de Bellerive)</small>", nameRaw: "Savonnière", lines: [], geolocation: nil),
+            Stop(id: "MONT", nameFormatted: "Annemasse<small>-Parc Montessuit</small>", nameRaw: "Annemasse-Parc", lines: [], geolocation: nil),
         ]))
     }
 }

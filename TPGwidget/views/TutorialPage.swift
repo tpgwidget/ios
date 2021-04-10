@@ -49,7 +49,7 @@ struct TutorialPage: View {
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
                 .padding(geo.safeAreaInsets)
-                .padding(.top, 50)
+                .padding(.vertical, 50)
                 
                 Button(action: close, label: {
                     Image(systemName: "xmark.circle")

@@ -3,6 +3,7 @@ import SwiftUI
 /// Shows the tutorial of the app.
 struct TutorialPage: View {
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
     @State var selection = 0
     
     let slides = [
@@ -34,10 +35,14 @@ struct TutorialPage: View {
 
                                 if slideIndex == slides.count - 1 {
                                     Button("Commencer", action: close)
-                                    .buttonStyle(RoundedButtonStyle(variant: .inversed))
+                                        .buttonStyle(RoundedButtonStyle(
+                                            variant: colorScheme == .light ? .inversed : .normal)
+                                        )
                                 } else {
                                     Button("Suivant", action: nextSlide)
-                                    .buttonStyle(RoundedButtonStyle(variant: .inversed))
+                                        .buttonStyle(RoundedButtonStyle(
+                                            variant: colorScheme == .light ? .inversed : .normal)
+                                        )
                                 }
                             }
                         }
@@ -77,8 +82,11 @@ struct TutorialPage: View {
 
 struct TutorialPage_Previews: PreviewProvider {
     static var previews: some View {
-        ForEach([0, 1, 2], id: \.self) { page in
-            TutorialPage(selection: page)
+        ForEach(ColorScheme.allCases, id: \.self) { colorScheme in
+            ForEach([0, 1, 2], id: \.self) { page in
+                TutorialPage(selection: page)
+                    .preferredColorScheme(colorScheme)
+            }
         }
     }
 }

@@ -19,7 +19,7 @@ struct StopPage: View {
             
             Spacer().frame(maxHeight: 96)
         }
-        .navigationTitle(Text(stop.nameRaw))
+        .navigationTitle(Text(stop.name.corrected))
     }
     
     func install() {
@@ -44,7 +44,7 @@ struct StopPage_Previews: PreviewProvider {
         Line(name: "L4", background: Color(hex: "#E08932"), text: Color.white, shape: .rectangular, type: .train),
     ]
     
-    static var stop = Stop(id: "BHET", nameFormatted: "Lancy-Bachet<small>-Gare</small>", nameRaw: "Lancy-Bachet-Gare", lines: lines, geolocation: nil)
+    static var stop = Stop(id: "BHET", name: Stop.Name(formatted: "Lancy-Bachet<small>-Gare</small>", corrected: "Lancy-Bachet-Gare", raw: "Bachet gare"), lines: lines, geolocation: nil)
     
     static var previews: some View {
         NavigationView {

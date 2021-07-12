@@ -3,10 +3,15 @@ import Foundation
 /// A public transit stop.
 struct Stop: Decodable, Identifiable {
     let id: String // (stop code)
-    let nameFormatted: String
-    let nameRaw: String
+    let name: Name
     let lines: [Line]
     let geolocation: Geolocation?
+    
+    struct Name: Codable {
+        let formatted: String
+        let corrected: String
+        let raw: String
+    }
 
     struct Geolocation: Codable {
         let latitude: Double
@@ -22,7 +27,7 @@ struct Stop: Decodable, Identifiable {
     }
     
     func nameMatches(_ normalizedQuery: String) -> Bool {
-        return Stop.normalizeForSearch(nameFormatted).contains(normalizedQuery)
-            || Stop.normalizeForSearch(nameRaw).contains(normalizedQuery)
+        return Stop.normalizeForSearch(name.corrected).contains(normalizedQuery)
+            || Stop.normalizeForSearch(name.raw).contains(normalizedQuery)
     }
 }

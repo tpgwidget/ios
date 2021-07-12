@@ -30,7 +30,7 @@ struct StopsPage: View {
                         
                         ForEach(stops) { stop in
                             NavigationLink(destination: StopPage(stop: stop), label: {
-                                MultiLevelText(source: stop.nameFormatted)
+                                MultiLevelText(source: stop.name.formatted)
                             })
                         }
                         
@@ -101,10 +101,30 @@ struct StopsPage: View {
 
 struct StopsPage_Previews: PreviewProvider {
     static let sampleStops = [
-        Stop(id: "BAIR", nameFormatted: "Bel-Air", nameRaw: "Bel-Air", lines: [], geolocation: nil),
-        Stop(id: "CVIN", nameFormatted: "Gare Cornavin", nameRaw: "Gare Cornavin", lines: [], geolocation: nil),
-        Stop(id: "RIVE", nameFormatted: "Rive", nameRaw: "Rive", lines: [], geolocation: nil),
-        Stop(id: "MONT", nameFormatted: "Annemasse<small>-Parc Montessuit</small>", nameRaw: "Annemasse-Parc", lines: [], geolocation: nil),
+        Stop(
+            id: "BAIR",
+            name: Stop.Name(formatted: "Bel-Air", corrected: "Bel-Air", raw: "Bel-Air"),
+            lines: [],
+            geolocation: nil
+        ),
+        Stop(
+            id: "CVIN",
+            name: Stop.Name(formatted: "Gare Cornavin", corrected: "Gare Cornavin", raw: "Gare Cornavin"),
+            lines: [],
+            geolocation: nil
+        ),
+        Stop(
+            id: "RIVE",
+            name: Stop.Name(formatted: "Rive", corrected: "Rive", raw: "Rive"),
+            lines: [],
+            geolocation: nil
+        ),
+        Stop(
+            id: "MONT",
+            name: Stop.Name(formatted: "Annemasse<small>-Parc Montessuit</small>", corrected: "Annemasse-Parc Montessuit", raw: "Parc montessuit"),
+            lines: [],
+            geolocation: nil
+        ),
     ]
     
     static var previews: some View {

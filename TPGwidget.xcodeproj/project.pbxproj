@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A1E837C261D17B10084DB35 /* StopsAPIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E837B261D17B10084DB35 /* StopsAPIResult.swift */; };
+		1A1E837C261D17B10084DB35 /* StopsApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E837B261D17B10084DB35 /* StopsApiResult.swift */; };
 		1A1E8381261D18CA0084DB35 /* StopsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E8380261D18CA0084DB35 /* StopsPage.swift */; };
 		1A1E8385261DB5D50084DB35 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E8384261DB5D50084DB35 /* TutorialPage.swift */; };
+		1A379289269CCAB40063DDE2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A379288269CCAB40063DDE2 /* ApiError.swift */; };
 		1A45EBD02621FF7E003C3D7D /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A45EBCF2621FF7E003C3D7D /* Stickers.xcassets */; };
 		1A45EBD42621FF7E003C3D7D /* TPGwidget Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */; };
@@ -50,9 +51,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1A1E837B261D17B10084DB35 /* StopsAPIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsAPIResult.swift; sourceTree = "<group>"; };
+		1A1E837B261D17B10084DB35 /* StopsApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsApiResult.swift; sourceTree = "<group>"; };
 		1A1E8380261D18CA0084DB35 /* StopsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsPage.swift; sourceTree = "<group>"; };
 		1A1E8384261DB5D50084DB35 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
+		1A379288269CCAB40063DDE2 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TPGwidget Stickers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A45EBCF2621FF7E003C3D7D /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		1A45EBD12621FF7E003C3D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,7 +137,8 @@
 			children = (
 				1AFE7481261CBC45003B6EEA /* Stop.swift */,
 				1AFE7488261CBD47003B6EEA /* Line.swift */,
-				1A1E837B261D17B10084DB35 /* StopsAPIResult.swift */,
+				1A1E837B261D17B10084DB35 /* StopsApiResult.swift */,
+				1A379288269CCAB40063DDE2 /* ApiError.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -255,7 +258,7 @@
 			files = (
 				1AFE7489261CBD47003B6EEA /* Line.swift in Sources */,
 				1A1E8385261DB5D50084DB35 /* TutorialPage.swift in Sources */,
-				1A1E837C261D17B10084DB35 /* StopsAPIResult.swift in Sources */,
+				1A1E837C261D17B10084DB35 /* StopsApiResult.swift in Sources */,
 				1AFE7493261CC46D003B6EEA /* LineIcon.swift in Sources */,
 				1A820472261E580C000232B4 /* MultiLevelText.swift in Sources */,
 				1A820475261EED41000232B4 /* SearchBar.swift in Sources */,
@@ -264,6 +267,7 @@
 				1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */,
 				1A82046F261E29B6000232B4 /* RoundedButtonStyle.swift in Sources */,
 				1AFE7482261CBC45003B6EEA /* Stop.swift in Sources */,
+				1A379289269CCAB40063DDE2 /* ApiError.swift in Sources */,
 				1AFE7499261CFA1D003B6EEA /* StopPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

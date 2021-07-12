@@ -2,9 +2,11 @@ import SwiftUI
 
 /// Main page of the app.
 struct StopsPage: View {
-    @State var stops: StopsAPIResult? = nil
+    @State var apiResult: StopsApiResult? = nil
     
-    @State var showErrorMessage = false
+    @State var error: ApiError? = nil
+    @State var showError = false
+
     @State var showTutorial = false
     
     @State var searchQuery = ""
@@ -53,10 +55,10 @@ struct StopsPage: View {
         .onAppear(perform: load)
         
         // Loading error alert
-        .alert(isPresented: $showErrorMessage, content: {
+        .alert(isPresented: $showError, content: {
             Alert(
-                title: Text("Connexion impossible"),
-                message: Text("TPGwidget n’a pas pu se connecter au serveur. La connexion à Internet fonctionne-t-elle ?"),
+                title: Text(error!.formattedTitle),
+                message: Text(error!.formattedContent),
                 dismissButton: .default(Text("Réessayer"), action: load)
             )
         })
@@ -67,42 +69,51 @@ struct StopsPage: View {
         })
     }
     
-    var isLoading: Bool { stops == nil }
+    var isLoading: Bool { apiResult == nil }
     
     var filteredStops: [Stop] {
         let query = Stop.normalizeForSearch(searchQuery)
         if query.isEmpty {
-            return stops!.all
+            return apiResult!.all!
         }
         
-        return stops!.all.filter { $0.nameMatches(query) }
+        return apiResult!.all!.filter { $0.nameMatches(query) }
     }
     
     /// Loads the view’s contents from the API.
     func load() {
-        if stops != nil {
+        if apiResult != nil {
             return
         }
         
-        StopsAPIResult.fetch(
+        StopsApiResult.fetch(
             success: { stops in
-                self.stops = stops
+                self.apiResult = stops
                 self.showTutorial = true
             },
-            error: {
-                self.showErrorMessage = true
+            error: { error in
+                self.error = error
+                self.showError = true
             }
         )
     }
 }
 
 struct StopsPage_Previews: PreviewProvider {
+    static let sampleStops = [
+        Stop(id: "BAIR", nameFormatted: "Bel-Air", nameRaw: "Bel-Air", lines: [], geolocation: nil),
+        Stop(id: "CVIN", nameFormatted: "Gare Cornavin", nameRaw: "Gare Cornavin", lines: [], geolocation: nil),
+        Stop(id: "RIVE", nameFormatted: "Rive", nameRaw: "Rive", lines: [], geolocation: nil),
+        Stop(id: "MONT", nameFormatted: "Annemasse<small>-Parc Montessuit</small>", nameRaw: "Annemasse-Parc", lines: [], geolocation: nil),
+    ]
+    
     static var previews: some View {
-        StopsPage(stops: StopsAPIResult(all: [
-            Stop(id: "BAIR", nameFormatted: "Bel-Air", nameRaw: "Bel-Air", lines: [], geolocation: nil),
-            Stop(id: "CVIN", nameFormatted: "Gare Cornavin", nameRaw: "Gare Cornavin", lines: [], geolocation: nil),
-            Stop(id: "RIVE", nameFormatted: "Rive", nameRaw: "Rive", lines: [], geolocation: nil),
-            Stop(id: "MONT", nameFormatted: "Annemasse<small>-Parc Montessuit</small>", nameRaw: "Annemasse-Parc", lines: [], geolocation: nil),
-        ]))
+        StopsPage(apiResult:
+            StopsApiResult(
+                error: nil,
+                featured: sampleStops,
+                all: sampleStops
+            )
+        )
     }
 }

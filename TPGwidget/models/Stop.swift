@@ -26,6 +26,10 @@ struct Stop: Decodable, Identifiable {
             .replacingOccurrences(of: "[^a-z0-9]+", with: "", options: .regularExpression)
     }
     
+    static var empty: Stop {
+        Stop(id: "", name: Name(formatted: "", corrected: "", raw: ""), lines: [], geolocation: nil)
+    }
+    
     func nameMatches(_ normalizedQuery: String) -> Bool {
         return Stop.normalizeForSearch(name.corrected).contains(normalizedQuery)
             || Stop.normalizeForSearch(name.raw).contains(normalizedQuery)

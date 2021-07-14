@@ -9,44 +9,88 @@ struct StopsPage: View {
 
     @State var showTutorial = false
     
+    @State var isSearchActive = false
     @State var searchQuery = ""
+    
+    // https://www.hackingwithswift.com/quick-start/swiftui/how-to-use-programmatic-navigation-in-swiftui
+    @State var selectedStop = Stop.empty
+    @State var navigateToSelectedStop = false
     
     var body: some View {
         NavigationView {
             if isLoading {
                 ProgressView()
             } else {
-                List {
-                    Section {
-                        SearchBar(value: $searchQuery, placeholder: "Rechercher un arrêt")
-                            .listRowInsets(EdgeInsets())
-                            .padding(.vertical, 8)
-                            .padding(.horizontal)
-                            .buttonStyle(PlainButtonStyle()) // fixes the behavior of buttons, https://stackoverflow.com/a/58368388/4652564
+                GeometryReader { geo in
+                    List {
+                        if !isSearchActive && searchQuery.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                            // Header
+                            Section {
+                                // Featured stops
+                                FeaturedStops(
+                                    stops: apiResult!.featured!,
+                                    forceTwoColumns: geo.size.width < 350,
+                                    onStopSelected: { stop in
+                                        selectedStop = stop
+                                        navigateToSelectedStop = true
+                                    }
+                                )
+                            }
+                            
+                            // Stops list title + hidden link
+                            Section {
+                                // Hidden navigation link for programmatic navigation
+                                ZStack(alignment: .bottomLeading) {
+                                    NavigationLink(destination: StopPage(stop: selectedStop), isActive: $navigateToSelectedStop) {
+                                        EmptyView()
+                                    }
+                                    .disabled(!navigateToSelectedStop)
+                                    .allowsHitTesting(false)
+                                    .opacity(0)
+                                    
+                                    Text("Tous les arrêts")
+                                    .font(.system(
+                                        size: UIFont.preferredFont(forTextStyle: .title3).pointSize,
+                                        weight: .semibold,
+                                        design: .default
+                                    ))
+                                    .padding(.bottom, -8)
+                                }
+                            }
+                        }
+                        
+                        Section {
+                            // Search bar
+                            SearchBar(value: $searchQuery, isActive: $isSearchActive, placeholder: "Rechercher un arrêt")
+                                .listRowInsets(EdgeInsets())
+                                .buttonStyle(PlainButtonStyle()) // fixes the behavior of buttons, https://stackoverflow.com/a/58368388/4652564
+                                .padding(.horizontal)
+                        }
+                        
+                        // Stops list
+                        Section {
+                            let stops = filteredStops
+                            
+                            ForEach(stops) { stop in
+                                NavigationLink(destination: StopPage(stop: stop), label: {
+                                    MultiLevelText(source: stop.name.formatted)
+                                })
+                            }
+                            
+                            if stops.isEmpty {
+                                Text("Aucun arrêt trouvé.").italic()
+                            }
+                        }
                     }
                     
-                    Section {
-                        let stops = filteredStops
-                        
-                        ForEach(stops) { stop in
-                            NavigationLink(destination: StopPage(stop: stop), label: {
-                                MultiLevelText(source: stop.name.formatted)
+                    .navigationTitle("Nouveau raccourci")
+                    .toolbar {
+                        ToolbarItemGroup(placement: .navigationBarTrailing) {
+                            Button(action: { showTutorial = true }, label: {
+                                Image(systemName: "questionmark.circle")
                             })
+                            .accessibility(label: Text("Tutoriel"))
                         }
-                        
-                        if stops.isEmpty {
-                            Text("Aucun arrêt trouvé.").italic()
-                        }
-                    }
-                }
-                
-                .navigationTitle("Nouveau raccourci")
-                .toolbar {
-                    ToolbarItemGroup(placement: .navigationBarTrailing) {
-                        Button(action: { showTutorial = true }, label: {
-                            Image(systemName: "questionmark.circle")
-                        })
-                        .accessibility(label: Text("Tutoriel"))
                     }
                 }
             }
@@ -127,13 +171,22 @@ struct StopsPage_Previews: PreviewProvider {
         ),
     ]
     
+    static let apiResult = StopsApiResult(
+        error: nil,
+        featured: Array(sampleStops[0...2]),
+        all: sampleStops
+    )
+    
     static var previews: some View {
-        StopsPage(apiResult:
-            StopsApiResult(
-                error: nil,
-                featured: sampleStops,
-                all: sampleStops
-            )
-        )
+        StopsPage(apiResult: apiResult)
+            .previewDevice(PreviewDevice(rawValue: "iPhone SE (1st generation)"))
+        
+        StopsPage(apiResult: apiResult)
+            .previewDevice(PreviewDevice(rawValue: "iPhone SE (2nd generation)"))
+        
+        StopsPage(apiResult: apiResult)
+        
+        StopsPage(apiResult: apiResult)
+            .previewDevice(PreviewDevice(rawValue: "iPad Air (4th generation)"))
     }
 }

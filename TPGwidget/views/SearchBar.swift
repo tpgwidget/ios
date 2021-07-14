@@ -3,7 +3,7 @@ import SwiftUI
 /// Search bar component.
 struct SearchBar: View {
     @Binding var value: String
-    @State var isActive: Bool = false
+    @Binding var isActive: Bool
     let placeholder: String
     
     var body: some View {
@@ -60,11 +60,11 @@ struct SearchBar: View {
 
 struct SearchBar_Previews: PreviewProvider {
     static var previews: some View {
-        SearchBar(value: .constant(""), placeholder: "Recherche")
+        SearchBar(value: .constant(""), isActive: .constant(false), placeholder: "Recherche")
             .previewDisplayName("Default")
             .previewLayout(.sizeThatFits)
         
-        SearchBar(value: .constant("Hello world"), isActive: true, placeholder: "Rechercher")
+        SearchBar(value: .constant("Hello world"), isActive: .constant(true), placeholder: "Rechercher")
             .previewDisplayName("Active")
             .previewLayout(.sizeThatFits)
     }

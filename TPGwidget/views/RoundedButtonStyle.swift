@@ -40,6 +40,8 @@ struct RoundedButtonStyle: ButtonStyle {
             
             .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             .animation(.easeInOut(duration: 0.2))
+        
+            .shadow(color: Color("ButtonShadow"), radius: 5, x: 0, y: 4)
     }
 }
 

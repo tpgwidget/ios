@@ -16,30 +16,44 @@ struct FeaturedStops: View {
             spacing: spacing
         ) {
             ForEach(stops) { stop in
-                ZStack(alignment: .bottomLeading) {
-                    LinearGradient(
-                        gradient: Gradient(colors: [Color("ButtonGradientTop"), Color("ButtonGradientBottom")]),
-                        startPoint: .top,
-                        endPoint: .bottom
-                    )
-                    .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
-                    .shadow(color: Color("ButtonShadow"), radius: 5, x: 0, y: 4)
-                    
-                    Text(stop.name.corrected)
-                        .font(.system(size: 14, weight: .semibold, design: .default))
-                        .lineSpacing(0)
-                        .foregroundColor(.white)
-                        .padding(12)
-                }
-                .frame(minHeight: 20)
-                .hoverEffect(.lift)
-                .onTapGesture {
+                Button(stop.name.corrected) {
                     onStopSelected(stop)
                 }
+                .buttonStyle(FeaturedStopButtonStyle())
             }
         }
     }
 }
+
+struct FeaturedStopButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        
+        ZStack(alignment: .bottomLeading) {
+            LinearGradient(
+                gradient: Gradient(colors: [Color("ButtonGradientTop"), Color("ButtonGradientBottom")]),
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .overlay(Color.black.opacity(configuration.isPressed ? 0.15 : 0))
+            .mask(RoundedRectangle(cornerRadius: 8, style: .continuous))
+            .shadow(color: Color("ButtonShadow"), radius: 5, x: 0, y: 4)
+            .animation(.easeInOut(duration: 0.2))
+            
+            configuration.label
+                .font(.system(size: 14, weight: .semibold, design: .default))
+                .lineSpacing(0)
+                .foregroundColor(.white)
+                .padding(12)
+        }
+        .frame(minHeight: 20)
+        .hoverEffect(.lift)
+        
+        .scaleEffect(configuration.isPressed ? 1.06 : 1)
+        .animation(.easeInOut(duration: 0.2))
+    }
+}
+
+
 
 struct FeaturedStops_Previews: PreviewProvider {
     static let sampleStops = [

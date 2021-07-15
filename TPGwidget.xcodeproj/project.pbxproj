@@ -448,7 +448,7 @@
 				DEVELOPMENT_TEAM = W47E2LS5Y9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TPGwidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,7 +472,7 @@
 				DEVELOPMENT_TEAM = W47E2LS5Y9;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TPGwidget/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

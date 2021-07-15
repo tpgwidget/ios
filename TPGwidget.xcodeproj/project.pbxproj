@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A1E837C261D17B10084DB35 /* StopsApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E837B261D17B10084DB35 /* StopsApiResult.swift */; };
+		1A1E8381261D18CA0084DB35 /* StopsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E8380261D18CA0084DB35 /* StopsPage.swift */; };
+		1A1E8385261DB5D50084DB35 /* TutorialPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1E8384261DB5D50084DB35 /* TutorialPage.swift */; };
+		1A379289269CCAB40063DDE2 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A379288269CCAB40063DDE2 /* ApiError.swift */; };
+		1A37928D269CDDEF0063DDE2 /* FeaturedStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A37928C269CDDEF0063DDE2 /* FeaturedStops.swift */; };
+		1A45EBD02621FF7E003C3D7D /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A45EBCF2621FF7E003C3D7D /* Stickers.xcassets */; };
+		1A45EBD42621FF7E003C3D7D /* TPGwidget Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */; };
+		1A54F74A261CB10500BDB659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F749261CB10500BDB659 /* Assets.xcassets */; };
+		1A54F74D261CB10500BDB659 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A54F74C261CB10500BDB659 /* Preview Assets.xcassets */; };
+		1A82046F261E29B6000232B4 /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A82046E261E29B6000232B4 /* RoundedButtonStyle.swift */; };
+		1A820472261E580C000232B4 /* MultiLevelText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A820471261E580B000232B4 /* MultiLevelText.swift */; };
+		1A820475261EED41000232B4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A820474261EED41000232B4 /* SearchBar.swift */; };
+		1AFE7482261CBC45003B6EEA /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7481261CBC45003B6EEA /* Stop.swift */; };
+		1AFE7489261CBD47003B6EEA /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7488261CBD47003B6EEA /* Line.swift */; };
+		1AFE7493261CC46D003B6EEA /* LineIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7492261CC46D003B6EEA /* LineIcon.swift */; };
+		1AFE7496261CE9FC003B6EEA /* LinesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7495261CE9FC003B6EEA /* LinesGrid.swift */; };
+		1AFE7499261CFA1D003B6EEA /* StopPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFE7498261CFA1D003B6EEA /* StopPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A45EBD22621FF7E003C3D7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A54F73A261CB10400BDB659 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A45EBCC2621FF7C003C3D7D;
+			remoteInfo = "TPGwidget Stickers";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A45EBD52621FF7E003C3D7D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1A45EBD42621FF7E003C3D7D /* TPGwidget Stickers.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A1E837B261D17B10084DB35 /* StopsApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsApiResult.swift; sourceTree = "<group>"; };
+		1A1E8380261D18CA0084DB35 /* StopsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsPage.swift; sourceTree = "<group>"; };
+		1A1E8384261DB5D50084DB35 /* TutorialPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPage.swift; sourceTree = "<group>"; };
+		1A379288269CCAB40063DDE2 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		1A37928C269CDDEF0063DDE2 /* FeaturedStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedStops.swift; sourceTree = "<group>"; };
+		1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TPGwidget Stickers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A45EBCF2621FF7E003C3D7D /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
+		1A45EBD12621FF7E003C3D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A54F742261CB10400BDB659 /* TPGwidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPGwidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPGwidgetApp.swift; sourceTree = "<group>"; };
+		1A54F749261CB10500BDB659 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A54F74C261CB10500BDB659 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1A54F74E261CB10500BDB659 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A82046E261E29B6000232B4 /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
+		1A820471261E580B000232B4 /* MultiLevelText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLevelText.swift; sourceTree = "<group>"; };
+		1A820474261EED41000232B4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		1AFE7481261CBC45003B6EEA /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		1AFE7488261CBD47003B6EEA /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		1AFE7492261CC46D003B6EEA /* LineIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineIcon.swift; sourceTree = "<group>"; };
+		1AFE7495261CE9FC003B6EEA /* LinesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinesGrid.swift; sourceTree = "<group>"; };
+		1AFE7498261CFA1D003B6EEA /* StopPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopPage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A54F73F261CB10400BDB659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A45EBCE2621FF7C003C3D7D /* TPGwidget Stickers */ = {
+			isa = PBXGroup;
+			children = (
+				1A45EBCF2621FF7E003C3D7D /* Stickers.xcassets */,
+				1A45EBD12621FF7E003C3D7D /* Info.plist */,
+			);
+			path = "TPGwidget Stickers";
+			sourceTree = "<group>";
+		};
+		1A54F739261CB10400BDB659 = {
+			isa = PBXGroup;
+			children = (
+				1A54F744261CB10400BDB659 /* TPGwidget */,
+				1A45EBCE2621FF7C003C3D7D /* TPGwidget Stickers */,
+				1A54F743261CB10400BDB659 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A54F743261CB10400BDB659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A54F742261CB10400BDB659 /* TPGwidget.app */,
+				1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A54F744261CB10400BDB659 /* TPGwidget */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE748C261CC43F003B6EEA /* views */,
+				1AFE748B261CC3FB003B6EEA /* models */,
+				1A54F745261CB10400BDB659 /* TPGwidgetApp.swift */,
+				1A54F749261CB10500BDB659 /* Assets.xcassets */,
+				1A54F74E261CB10500BDB659 /* Info.plist */,
+				1A54F74B261CB10500BDB659 /* Preview Content */,
+			);
+			path = TPGwidget;
+			sourceTree = "<group>";
+		};
+		1A54F74B261CB10500BDB659 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1A54F74C261CB10500BDB659 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1AFE748B261CC3FB003B6EEA /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE7481261CBC45003B6EEA /* Stop.swift */,
+				1AFE7488261CBD47003B6EEA /* Line.swift */,
+				1A1E837B261D17B10084DB35 /* StopsApiResult.swift */,
+				1A379288269CCAB40063DDE2 /* ApiError.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		1AFE748C261CC43F003B6EEA /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1AFE7492261CC46D003B6EEA /* LineIcon.swift */,
+				1AFE7495261CE9FC003B6EEA /* LinesGrid.swift */,
+				1AFE7498261CFA1D003B6EEA /* StopPage.swift */,
+				1A1E8380261D18CA0084DB35 /* StopsPage.swift */,
+				1A1E8384261DB5D50084DB35 /* TutorialPage.swift */,
+				1A82046E261E29B6000232B4 /* RoundedButtonStyle.swift */,
+				1A820471261E580B000232B4 /* MultiLevelText.swift */,
+				1A820474261EED41000232B4 /* SearchBar.swift */,
+				1A37928C269CDDEF0063DDE2 /* FeaturedStops.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A45EBCC2621FF7C003C3D7D /* TPGwidget Stickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A45EBD82621FF7E003C3D7D /* Build configuration list for PBXNativeTarget "TPGwidget Stickers" */;
+			buildPhases = (
+				1A45EBCB2621FF7C003C3D7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TPGwidget Stickers";
+			productName = "TPGwidget Stickers";
+			productReference = 1A45EBCD2621FF7C003C3D7D /* TPGwidget Stickers.appex */;
+			productType = "com.apple.product-type.app-extension.messages-sticker-pack";
+		};
+		1A54F741261CB10400BDB659 /* TPGwidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A54F751261CB10500BDB659 /* Build configuration list for PBXNativeTarget "TPGwidget" */;
+			buildPhases = (
+				1A54F73E261CB10400BDB659 /* Sources */,
+				1A54F73F261CB10400BDB659 /* Frameworks */,
+				1A54F740261CB10400BDB659 /* Resources */,
+				1A45EBD52621FF7E003C3D7D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A45EBD32621FF7E003C3D7D /* PBXTargetDependency */,
+			);
+			name = TPGwidget;
+			productName = TPGwidget;
+			productReference = 1A54F742261CB10400BDB659 /* TPGwidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A54F73A261CB10400BDB659 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1A45EBCC2621FF7C003C3D7D = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					1A54F741261CB10400BDB659 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 1A54F73D261CB10400BDB659 /* Build configuration list for PBXProject "TPGwidget" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A54F739261CB10400BDB659;
+			productRefGroup = 1A54F743261CB10400BDB659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A54F741261CB10400BDB659 /* TPGwidget */,
+				1A45EBCC2621FF7C003C3D7D /* TPGwidget Stickers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A45EBCB2621FF7C003C3D7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A45EBD02621FF7E003C3D7D /* Stickers.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A54F740261CB10400BDB659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A54F74D261CB10500BDB659 /* Preview Assets.xcassets in Resources */,
+				1A54F74A261CB10500BDB659 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A54F73E261CB10400BDB659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AFE7489261CBD47003B6EEA /* Line.swift in Sources */,
+				1A1E8385261DB5D50084DB35 /* TutorialPage.swift in Sources */,
+				1A1E837C261D17B10084DB35 /* StopsApiResult.swift in Sources */,
+				1A37928D269CDDEF0063DDE2 /* FeaturedStops.swift in Sources */,
+				1AFE7493261CC46D003B6EEA /* LineIcon.swift in Sources */,
+				1A820472261E580C000232B4 /* MultiLevelText.swift in Sources */,
+				1A820475261EED41000232B4 /* SearchBar.swift in Sources */,
+				1A1E8381261D18CA0084DB35 /* StopsPage.swift in Sources */,
+				1AFE7496261CE9FC003B6EEA /* LinesGrid.swift in Sources */,
+				1A54F746261CB10400BDB659 /* TPGwidgetApp.swift in Sources */,
+				1A82046F261E29B6000232B4 /* RoundedButtonStyle.swift in Sources */,
+				1AFE7482261CBC45003B6EEA /* Stop.swift in Sources */,
+				1A379289269CCAB40063DDE2 /* ApiError.swift in Sources */,
+				1AFE7499261CFA1D003B6EEA /* StopPage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A45EBD32621FF7E003C3D7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A45EBCC2621FF7C003C3D7D /* TPGwidget Stickers */;
+			targetProxy = 1A45EBD22621FF7E003C3D7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A45EBD62621FF7E003C3D7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3.0.0.2;
+				DEVELOPMENT_TEAM = W47E2LS5Y9;
+				INFOPLIST_FILE = "TPGwidget Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 3.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.nicolapps.tpgwidget.stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A45EBD72621FF7E003C3D7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3.0.0.2;
+				DEVELOPMENT_TEAM = W47E2LS5Y9;
+				INFOPLIST_FILE = "TPGwidget Stickers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 3.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.nicolapps.tpgwidget.stickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A54F74F261CB10500BDB659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A54F750261CB10500BDB659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A54F752261CB10500BDB659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3.0.0.2;
+				DEVELOPMENT_ASSET_PATHS = "\"TPGwidget/Preview Content\"";
+				DEVELOPMENT_TEAM = W47E2LS5Y9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TPGwidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.nicolapps.tpgwidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1A54F753261CB10500BDB659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3.0.0.2;
+				DEVELOPMENT_ASSET_PATHS = "\"TPGwidget/Preview Content\"";
+				DEVELOPMENT_TEAM = W47E2LS5Y9;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = TPGwidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.nicolapps.tpgwidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A45EBD82621FF7E003C3D7D /* Build configuration list for PBXNativeTarget "TPGwidget Stickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A45EBD62621FF7E003C3D7D /* Debug */,
+				1A45EBD72621FF7E003C3D7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A54F73D261CB10400BDB659 /* Build configuration list for PBXProject "TPGwidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A54F74F261CB10500BDB659 /* Debug */,
+				1A54F750261CB10500BDB659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A54F751261CB10500BDB659 /* Build configuration list for PBXNativeTarget "TPGwidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A54F752261CB10500BDB659 /* Debug */,
+				1A54F753261CB10500BDB659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A54F73A261CB10400BDB659 /* Project object */;
+}
